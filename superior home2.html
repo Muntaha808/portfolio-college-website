@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  .custom-header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+   
+  }
+.one{
+            width: 100%;
+            max-width: 1400px;
+          background-image: url(https://www.pakpedia.pk/files/Image/unnamed-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,128,128,0.9);
+           height: 450px;
+            background-blend-mode: overlay;
+           }
+    #one{
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRic7zsmYvGZizBtzl1R8709qTyGSkTYhr89g&s);
+      background-repeat: no-repeat;
+      background-size: cover;
+     height: 1100px;
+    }
+#two{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlaYLmxqMJUI7A_qH8xEQpl9RY-0DC0a9uw&s);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+#sun{
+  list-style-type: none;
+            width: 200px;
+          color: black;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            text-align: end;
+}
+#sun a{
+  display: block;
+        color:black;
+       padding: 8px 16px;
+     margin-left: 140px;
+       display: inline;
+       text-align: end;
+}
+#sun a:hover{
+  text-decoration: underline;
+}
+ul{
+            list-style-type: none;
+            width: 200px;
+          color: white;
+            margin: 0;
+            padding: 0;
+        }
+      li a{
+        display: block;
+        color:white;
+       padding: 8px 16px;
+       text-decoration: none;
+         
+      }
+      /* Change the link color on hover */
+
+li a:hover{
+   
+    color: white;
+    text-decoration: underline;
+}
+.firstpic a:hover{
+          height: 250px;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  background-color: white; /* Background for text */
+  color:black;
+  transition: height 0.3s ease;
+  margin-left: 60px;
+}
+
+.text-box:hover {
+  height: 200px; /* Full height when hovered */
+}
+
+.short-text {
+  margin: 0;
+  padding: 10px;
+}
+
+.full-text {
+  margin: 0;
+  padding: 10px;
+  display: none;
+}
+
+/* Show the full text when the box is hovered */
+.text-box:hover .full-text {
+  display: block;
+}
+/* second div code  */
+.box{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  color: black;
+  transition: hight 0.3s ease;
+  margin-left: 530px;
+}
+.box:hover{
+  height: 200px;
+}
+.short{
+  margin: 0;
+  padding: 10px;
+}
+.box:hover .full{
+  display: block;
+}
+.full {
+  margin: 0;
+  padding: 10px;
+  display: none;
+}
+/* second div code ends */
+
+
+/* third div code starts */
+.box2{
+     position: absolute;
+     width: 100%;
+     height: 60px;
+     background-color: white;
+     color: black;
+     bottom: 0;
+     transition: hight 0.3s ease;
+     margin-left: 970px;
+}
+.box2:hover{
+  height: 200px;
+}
+.short2{
+  margin: 0;
+  padding: 10px;
+}
+.full2{
+  display: none;
+  margin: 0;
+  padding: 10px;
+}
+.box2:hover .full2{
+  display: block;
+}
+/* third div code ends */
+</style>
+</head>
+<body>
+  <div class="custom-header ">
+    <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/07/logo-for-web-01.png" alt="" style="width: 350px; height: 100px; margin-left: 70px; margin-top: -40px;">
+  <!-- navbar code  -->
+
+  <div style="margin-top: -80px; margin-left: -40px;">
+    <nav class="navbar navbar-expand-lg navbar-light " >
+     <div class="container-fluid">             
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars" style="font-size: xx-large; color:rgb(255, 217, 0); margin-left: 1270px; margin-top: -150px;"> </i></a>
+             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="  background-color:rgb(255, 217, 0) ;  color: black; margin-left: 1000px; font-size: large; width: 300px;">
+               <li><a class="dropdown-item" href="superior home2.html">HOME</a></li>
+               <li><a class="dropdown-item" href="about us 4.html">ABOUT US</a></li>
+                <li><a class="dropdown-item" href="superioi group (TSG)3.html">TSG(THE SUPERIOR GROUP)</a></li>
+               <li><a class="dropdown-item" href="#">ADMISSIONS</a></li>
+               <li><a class="dropdown-item" href="#">UK LEVEL 3 DIPLOMA </a></li>
+               <li><a class="dropdown-item" href="#">ACADEMICS</a></li>
+               <li><a class="dropdown-item" href="life at campuses5.html">LIFE AT CAMPUS</a></li>
+               <li><a class="dropdown-item" href="SUPERIOR campus facilities.html">CAMPUS FACILITIES</a></li>
+               <li><a class="dropdown-item" href="#">COLLEGE CAMPUSES</a></li>
+                <li><a class="dropdown-item" href="#">CAMPUS SEARCH</a></li>
+               <li><a class="dropdown-item" href="#">BECOME A FRANCHISEE</a></li>
+               <li><a class="dropdown-item" href="#">BLOGS </a></li>
+               <li><a class="dropdown-item" href="#">CONTACTS</a></li>
+               <li><button type="button" class="btn-danger" style=" width: 295px;"> <a href="superior apply.html">APPLY NOW </a></button></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </div>
+
+</div>
+ <!-- navbar code ends  -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner"><img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/09/Buildingwbp-scaled.webp" alt="" style="width: 100%; height: 500px;">
+          <div class="carousel-item active">
+            <img src="" class="d-block w-100" alt="..." style="width: 100%; height: 500px;">
+          </div>
+          <div class="carousel-item">
+           <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2024/11/Web_32.webp" alt="" style="width: 100%; height: 500px;" >
+          </div>
+          <div class="carousel-item">
+          <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2024/11/Web_2-_1__1.webp" alt="" style="width: 100%; height: 500px;">
+            </div>
+          </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <div id="one">
+        <div class="row" style="padding-top: 150px;">
+            <div class="col-md-6" style="margin-left: 30px;">
+           <h2 style="color: rgb(255, 217, 0);">campus</h2>
+           <a href="superior clg.html"><h1 style="color: teal;">SUPERIOR COLLEGE MIAN CHANNU</h1></a>
+           <p>Superior College is a landmark institute of quality education, a homelike feasible study environment, world-class college facilities and trainers like teachers to help you get not only educationally qualified but gain lifelong values. </p>
+           <p>The study culture at Superior College is reflective of pure Superior values and mission of ‘facilitating Superior human beings’. This is a place where students learn the art of living wholeheartedly and with a ‘sense of purpose’. ‘Excellence’ is achieved in academics, co-curricular and recreational activities. ‘Team work’ is learnt through sports and team building adventurous tours to the national and international destinations. ‘Creativity & innovation’ is enhanced through opportunities of working on skill-based projects while ‘reward for performance’ is ensured at every success to boost a passion for winning.   </p>
+           <p>The college students know that their teachers care about them, which makes them feel honoured, protected and valued. Superior guides its students to go confidently in the direction of their dreams and empowers them with the spirit to live the life they had only imagined.   </p>
+         <br>
+         <br>
+        
+        <center>
+           <button type="button" class="btn btn-warning">APPLY NOW</button>
+        </center>
+            </div>
+         <div class="col-md-6">
+         
+        <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/08/Superior-Group-of-Colleges.webp" alt="" style="width: 500px; margin-left: 800px; margin-top: -700px;">
+         </div>
+        </div>
+        <br>
+        <br>
+        <br>
+       
+          <!-- second div starts -->
+          <div style="width: 100%; background-color: #51392c;  height: 650px;">
+<img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/09/Chairman-Sir-Pic-for-TGS-Wejbwwsite-1.webp" alt="" style="width: 600px; margin-left: 700px; margin-top: 50px; height: 600px;">
+<div style="margin-left: 80px; margin-top: -570px; color: white;">
+<h3 style="color: rgb(255, 208, 0);">MESSAGE FROM CHAIRMAN</h3>
+<p>He knows how to turn Human Resource into Human Capital</p>
+<p>Glancing through the Academic possibilities in Pakistan, I believe Educational Excellence is</p>
+<p>the best strategy to strengthen our national identity. 21st century revolves around innovating</p>
+<p>uniqueness, and Superior is creating hope by encouraging new ideas to bring smiles through</p>
+<p>facilitation.</p>
+<p>Focusing on IQ and EQ gives a chance to explore logics and discover yourself from within.</p>
+<p>We empower our students to work hard, be optimistic and live life to the maximum. We have a</p>
+<p>congenial environment to make them learn the subtle art of decision making, opportunity</p>
+<p>seeking and become job creators instead of job seekers. Our entrepreneurial ecosystem</p>
+<p>seeking and become job creators instead of job seekers. Our entrepreneurial ecosystem</p>
+<h3 style="color:rgb(255, 208, 0) ;">PROF. DR. CHAUDHRY ABDUL REHMAN</h3>
+<p>Chairman | The Superior Group</p>
+<p>Director | PBA (Pakistan Broadcast Association)</p>
+<p>Chairman | APSUP (Association of Private Sector Universities of Pakistan)</p>
+</div>
+
+
+          </div>
+<!-- second div ends  -->
+<div id="one">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+<h1 style="color: teal; display: inline;">Facilitating Dreams,</h1>
+<h1 style="color:rgb(255, 208, 0) ; display: inline;"> Igniting Brilliance</h1>
+<p>Adding Value through Contributions</p>
+</center>
+<br>
+<br>
+
+<!-- first image text code stat -->
+ <div class="image-container">
+  <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2024/07/img-6-768x517.webp" alt="Image" style="width: 400px; margin-left: 20px;" >
+  <div class="text-box">
+    <p class="short-text" style="color: teal; margin-left: 80px;">PLAN ON IQ</p>
+    <p class="full-text">Superior Group of Colleges has an exclusive study Plan based on polishing students’ IQ (Intelligence Quotient)</p>
+  </div>
+
+
+  
+  <!-- first img code ends  -->
+
+  <!-- second img code starts -->
+   <div>
+    <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/08/img-6-768x517.png" alt="" style="width: 400px; margin-left: 470px; margin-top: -290px;">
+    <div class="box">
+    <p class="short" style="color: teal; margin-left: 80px; ">PLAN ON EQ</p>
+    <p class="full">Superior Group of Colleges has an exclusive study Plan based on polishing students’ IQ (Intelligence Quotient)</p>
+    </div>
+   </div>
+   <!-- second img code ends -->
+
+
+   <!-- third img code starts -->
+    <div>
+      <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/08/img3-768x517.png" alt="" style="width: 400px; margin-left: 920px; margin-top: -330px;">
+      <div class="box2">
+        <p class="short2" style="color: teal;">ACADEMIC EXCELLENCE</p>
+        <P class="full2">Superior Group of Colleges has an exclusive study Plan based on polishing students’ IQ (Intelligence Quotient)</P>
+       </div>
+    </div>
+    <!-- third img code ends  -->
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<div class="row">
+  
+ <div class="col-sm-3" style="background-color:rgb(255, 208, 0) ; color: white; height: 500px;">
+  <center>
+<h1>Grow with Triumph</h1>
+
+
+
+  <h4 style="margin-top:60px ;"> A Superior Promise</h4>
+ <p >We are an Emotionally Intelligent Institute helping individuals to explore themselves and influence others for shared goals. We help students become inspired learners, aspires, and dreamers. Our goal is to motivate them to become the masters of their fate and captains of their souls.</p>
+</center>
+ </div>
+
+ <div class="col-sm-3">
+<img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2025/01/Grow-with-triumpah.webp" alt="" style="height: 500px;">
+ </div>
+ <div class="col-sm-3" style="background-color: teal; color: white; height: 500px;">
+<h1>A Vibrant Campus Experience</h1>
+<ul style="margin-top:50px ;">
+  <li>Living the Moments</li>
+  <li>16 life changing yearly events</li>
+  <li>Entertaining the Learning</li>
+  <li>Entertaining the Learning</li>
+  <li>Entertaining the Learning</li>
+  <li>16 life changing yearly events</li>
+  <li>captains of their souls</li>
+  <li>captains of their souls</li>
+  <li>students become inspired learners,</li>
+</ul>
+ </div>
+ <div class="col-sm-3">
+<img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2025/01/A-Vibrant-Campus-Experience.webp" alt="" style="height: 500px;">
+ </div>
+</div>
+
+
+
+
+<div id="two">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 style="color: teal; display: inline; margin-left: 200px; ">Connecting the</h1>
+  <h1 style="color:rgb(255, 208, 0) ; display: inline;"> Superior Dots</h1>
+
+<div style="width: 400px; margin-left: 800px;">
+<p>Superior Colleges has grown to become the largest education network in Pakistan, with over 150,000+ students enrolled across its 260+ campuses. We offer a wide range of programs, from pre-university to postgraduate studies, and are committed to providing quality education at an affordable price.</p>
+</div>
+<h1 style="color: rgb(255, 208, 0) ; font-size: xxx-large; margin-left: 200px;">130+</h1>
+<p style="color: teal; margin-left: 200px;">CITIES</p>
+<h1 style="color: rgb(255, 208, 0) ; font-size: xxx-large; margin-left: 500px; margin-top: -100px;">260+</h1>
+<p style="color: teal; margin-left: 500px;">CAMPUSES</p>
+<h1 style="color: rgb(255, 208, 0) ; font-size: xxx-large; margin-left: 900px; margin-top: -100px;">150k+</h1>
+<p style="color: teal; margin-left: 900px;">CURRENT STUDENTS</p>
+</div>
+
+
+
+<div style="width: 100%; height: 400px; background-color: teal; color: white; border: 1px solid rgb(255, 208, 0);">
+  <div style="width: 500px;">
+  <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/07/logo-for-web-01.png" alt="" style="width: 300px; height: 130px; margin-left: 70px; padding-top: 50px;">
+<p style="padding-left: 90px;">We are committed to transform the lives of
+students, faculty and staff by providing them a
+Superior learning experience. Our plan EQ & IQ
+enables them to lead a meaningful & rewarding
+life.</p>
+<br>
+<i class="fa-brands fa-facebook" style="font-size: x-large; margin-left: 100px;"></i>
+<i class="fa-brands fa-instagram" style="font-size: x-large; margin-left: 10px;"></i>
+<i class="fa-brands fa-twitter" style="font-size: x-large; margin-left: 10px;"></i>
+<i class="fa-brands fa-youtube" style="font-size: x-large; margin-left: 10px;"></i>
+
+
+
+
+
+</div>
+
+<div style="width: 400px; margin-left:520px; margin-top: -230px;">
+  <h4>CONTACT INFO</h4>
+  <UL>
+    <li>Phone : <a href="">042-111-00-00-78</a></li>
+    <li>Email: <a href="">info@superiorcolleges.edu.pk</a> </li>
+  </UL>
+  <p>Address: The Superior Group of Colleges, 31 New Tipu Block, Garden Town, Lahore</p>
+  <p>Experience eduTech App​ on mobile:</p>
+
+</div>
+<div>
+  <img src="https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/07/Layer-12-copy-3.png" alt="" style="width: 350px; margin-top: -250px; margin-left: 970px;">
+</div>
+</div>
+<div style="width: 100%; background-color:rgb(255, 208, 0) ; height: 50px;">
+<p style="padding-top: 20px;display: inline;">© Copyright Superior Group All Rights Reserved 2025</p>
+<ul id="sun">
+  <li id="sun" ><a href="">Blogs</a></li>
+  <li id="sun"> <a href="">Campuses</a></li>
+  <li id="sun"> <a href="">About us</a></li>
+  <li id="sun"> <a href="">Contact us</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
